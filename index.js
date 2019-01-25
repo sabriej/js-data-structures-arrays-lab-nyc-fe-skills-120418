@@ -5,11 +5,11 @@ function destructivelyAppendDriver(name){
 function destructivelyPrependDriver(name){
   drivers.unshift(name);
 }
-function destructivelyRemoveLastDriver(Garfield){
-  drivers.pop(Garfield);
+function destructivelyRemoveLastDriver(){
+  drivers.pop();
 }
-function destructivelyRemoveFirstDriver(Milo){
-  drivers.shift(Milo);
+function destructivelyRemoveFirstDriver(){
+  drivers.shift();
 }
 function appendDriver(name){
   const copy=drivers.slice();
@@ -26,6 +26,8 @@ function removeLastDriver(){
   copy.pop();
   return copy;
 }
-function removeFirstDriver(Otis, Garfield){
-  drivers.shift(Milo, Otis, Garfield);
+function removeFirstDriver(){
+  const copy=drivers.slice();
+  copy.shift();
+  return copy;
 }
