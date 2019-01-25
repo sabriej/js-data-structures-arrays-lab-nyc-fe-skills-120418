@@ -21,8 +21,10 @@ function prependDriver(name){
   copy.unshift(name);
   return copy;
 }
-function removeLastDriver(Milo, Otis){
-  drivers.pop(Milo, Otis, Garfield);
+function removeLastDriver(){
+  const copy=drivers.slice();
+  copy.pop();
+  return copy;
 }
 function removeFirstDriver(Otis, Garfield){
   drivers.shift(Milo, Otis, Garfield);
