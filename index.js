@@ -11,7 +11,7 @@ function destructivelyRemoveLastDriver(Garfield){
 function destructivelyRemoveFirstDriver(Milo){
   drivers.shift(Milo);
 }
-function appendDriver(Milo, Otis, Garfield, Ralph){
+function appendDriver(name){
   drivers.push(Milo, Otis, Garfield);
 }
 function prependDriver(Arnold, Milo, Otis, Garfield){
